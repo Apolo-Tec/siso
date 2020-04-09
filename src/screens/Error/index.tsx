@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
-export default function Login() {
+export default function Error() {
   return (
     <View>
-      <Text>Login</Text>
+      <Text>Error</Text>
     </View>
   );
 }

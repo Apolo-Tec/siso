@@ -1,21 +1,8 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  StatusBar,
-  View,
-  Text
-} from 'react-native';
+import Routes from './src/routes';
 
-
-const App: () => React$Node = () => {
+export default function App() {
   return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <View><Text>Siso</Text></View>
-      </SafeAreaView>
-    </>
+      <Routes />
   );
-};
-
-export default App;
+}
