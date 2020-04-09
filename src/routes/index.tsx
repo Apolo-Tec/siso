@@ -3,6 +3,7 @@ import { StatusBar, SafeAreaView } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createStackNavigator } from '@react-navigation/stack';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 const Stack = createStackNavigator();
 
@@ -35,9 +36,10 @@ const drawerStack = () => (
 
 export default function Routes() {
   return (
-    <NavigationContainer>
-      {isLogged ? drawerStack() : loginStack() }
-      
-    </NavigationContainer>
+    <SafeAreaProvider>
+      <NavigationContainer>
+        {isLogged ? drawerStack() : loginStack() }
+      </NavigationContainer>
+    </SafeAreaProvider>
   );
 }
