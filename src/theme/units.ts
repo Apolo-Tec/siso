@@ -17,7 +17,7 @@ export default {
     height: 48,
   },
   input: {
-    height: 32,
+    height: 46,
   },
   logo: {
     width: 122,

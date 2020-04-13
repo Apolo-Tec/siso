@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, SafeAreaView, StatusBar } from 'react-native';
 
-import { CustomGrid, Box } from '../../components';
+import { CustomGrid, Box, Input } from '../../components';
 
 export default function Login() {
   return (
@@ -14,11 +14,16 @@ export default function Login() {
         alignItems="center" 
         marginLeft="medium" 
         marginRight="medium">
-        <Box>
-          <CustomGrid paddingTop="medium" paddingBottom="medium" paddingLeft="small" paddingRight="small">
-            <Text>Box element</Text>
-          </CustomGrid>
-        </Box>
+          <Box>
+            <CustomGrid paddingTop="medium" paddingBottom="medium" paddingLeft="small" paddingRight="small">
+              <CustomGrid marginBottom="medium">
+                <Input placeholder="Email" />
+              </CustomGrid>
+              <CustomGrid marginBottom="medium">
+                <Input placeholder="Senha" />
+              </CustomGrid>
+            </CustomGrid>
+          </Box>
       </CustomGrid>
     </SafeAreaView>
   );

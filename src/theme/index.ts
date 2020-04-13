@@ -15,7 +15,7 @@ export const sisoTheme: DefaultTheme = {
   colors: {
     background: {
       primary: colors.dodgerBlue,
-      white: colors.white,
+      tertiary: colors.aquaHaze,
     },
   },
   units: {
@@ -32,5 +32,9 @@ export const sisoTheme: DefaultTheme = {
       xxxxlarge: units.spacing.xxxxlarge,
       extraLarge: units.spacing.extraLarge,
     },
+    borderRadius: units.borderRadius,
+    input: {
+      height: units.input.height
+    }
   },
 }

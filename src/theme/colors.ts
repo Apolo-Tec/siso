@@ -1,6 +1,16 @@
 export default {
   dodgerBlue: '#4D7EFE',
   white: '#ffffff',
+  aquaHaze: '#F8FAFB',
+  athensGray: '#F2F4F6',
+  athensDarkGray: '#E8ECEF',
+  brightTurquoise: '#2CE5F6',
+  wildStrawberry: '#FE4D97',
+  atlantis: '#6DD239',
+  sunshade: '#FFAB2B',
+  gullGray: '#98A9BC',
+  bermudaGray: '#778CA2',
+  charade: '#252631',
 };
 
 export interface ColorPropsBackground {

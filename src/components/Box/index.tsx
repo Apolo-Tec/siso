@@ -1,7 +1,8 @@
 import React from 'react';
+import { BoxProps } from './interface';
 import { View } from 'react-native';
 
-export default function Box({ children }) {
+export default function Box({ children } : BoxProps) {
   const style = {  
       width: '100%',
       shadowColor: 'rgba(153,155,168,0.25)',
