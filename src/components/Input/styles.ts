@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 
 export const TextInputElement = styled.TextInput`
   height: ${({ theme }) => theme.units.input.height};

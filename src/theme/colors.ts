@@ -75,8 +75,10 @@ export interface ColorsProps {
   input: ColorPropsInput;
   border: string;
   button: {
-    flat: ColorsPropsButtonFlat;
-    outline: ColorsPropsButtonOutline;
+    primary: ButtonColorScheme;
+    secondary: ButtonColorScheme;
+    tertiary: ButtonColorScheme;
+    disabled: ButtonColorScheme;
   };
 }
 

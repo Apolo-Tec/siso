@@ -3,6 +3,7 @@ import { DefaultTheme } from 'styled-components/native';
 
 import colors, { ColorsProps } from './colors';
 import units, { UnitsProps } from './units';
+import { color } from 'react-native-reanimated';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
@@ -17,6 +18,24 @@ export const sisoTheme: DefaultTheme = {
       primary: colors.dodgerBlue,
       tertiary: colors.aquaHaze,
     },
+    button: {
+      primary: {
+        backgroundColor: colors.dodgerBlue,
+        fontColor: colors.white,
+      },
+      secondary: {
+        backgroundColor: colors.atlantis,
+        fontColor: colors.white,
+      },
+      tertiary: {
+        backgroundColor: colors.wildStrawberry,
+        fontColor: colors.white,
+      },
+      disabled: {
+        backgroundColor: colors.bermudaGray,
+        fontColor: colors.white,
+      }
+    }
   },
   units: {
     spacing: {
@@ -35,6 +54,9 @@ export const sisoTheme: DefaultTheme = {
     borderRadius: units.borderRadius,
     input: {
       height: units.input.height
+    },
+    button: {
+      height: units.button.height
     }
   },
 }

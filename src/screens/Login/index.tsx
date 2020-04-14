@@ -1,7 +1,7 @@
 import React from 'react';
-import { View, Text, SafeAreaView, StatusBar } from 'react-native';
+import { SafeAreaView, StatusBar } from 'react-native';
 
-import { CustomGrid, Box, Input } from '../../components';
+import { CustomGrid, Box, Input, Button } from '../../components';
 
 export default function Login() {
   return (
@@ -22,6 +22,7 @@ export default function Login() {
               <CustomGrid marginBottom="medium">
                 <Input placeholder="Senha" />
               </CustomGrid>
+              <Button title="Entrar" variant="primary" />
             </CustomGrid>
           </Box>
       </CustomGrid>

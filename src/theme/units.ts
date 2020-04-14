@@ -14,7 +14,7 @@ export default {
   },
   borderRadius: 8,
   button: {
-    height: 48,
+    height: 46,
   },
   input: {
     height: 46,
