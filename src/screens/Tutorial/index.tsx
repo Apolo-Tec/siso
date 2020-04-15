@@ -13,22 +13,21 @@ export default function Tutorial() {
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: '#9DD6EB'
     },
     slide2: {
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: '#97CAE5'
+      backgroundColor: '#FFFFFF'
     },
     slide3: {
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: '#92BBD9'
+      backgroundColor: '#FFFFFF'
     },
     text: {
-      color: '#fff',
+      color: '#000',
       fontSize: 30,
       fontWeight: 'bold'
     }};
@@ -37,17 +36,22 @@ export default function Tutorial() {
     <SafeAreaView style={{ flex: 1 }}>
       <StatusBar barStyle="dark-content" />
       <CustomGrid backgroundColor="secondary" flex={1}>
-        <Swiper style={styles.wrapper} showsButtons={true}>
-          <View style={styles.slide1}>
-            <Text style={styles.text}>Hello Swiper</Text>
-          </View>
-          <View style={styles.slide2}>
-            <Text style={styles.text}>Beautiful</Text>
-          </View>
-          <View style={styles.slide3}>
-            <Text style={styles.text}>And simple</Text>
-          </View>
-        </Swiper>
+        <CustomGrid flex={1}>
+            <Swiper style={styles.wrapper} index={1}>
+              <View style={styles.slide1}>
+                <Text style={styles.text}>Hello Swiper</Text>
+              </View>
+              <View style={styles.slide2}>
+                <Text style={styles.text}>Beautiful</Text>
+              </View>
+              <View style={styles.slide3}>
+                <Text style={styles.text}>And simple</Text>
+              </View>
+            </Swiper>
+        </CustomGrid>
+        <CustomGrid  paddingLeft="medium" paddingRight="medium" paddingBottom="medium"> 
+          <Button variant="primary" title="Continuar" />
+        </CustomGrid>
       </CustomGrid>
     </SafeAreaView>
   )
