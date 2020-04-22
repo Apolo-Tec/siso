@@ -44,7 +44,7 @@
 		00E356EE1AD99517003FC87E /* sisoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sisoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* sisoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sisoTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* siso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = siso.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* Siso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Siso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = siso/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = siso/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* siso.app */,
+				13B07F961A680F5B00A75B9A /* Siso.app */,
 				00E356EE1AD99517003FC87E /* sisoTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* siso-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* siso-tvOSTests.xctest */,
@@ -194,7 +194,6 @@
 				993123AC3CC4781F041FF8A2 /* Pods-siso-tvOSTests.debug.xcconfig */,
 				5229A3D029D46AF5E39218C4 /* Pods-siso-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -237,7 +236,7 @@
 			);
 			name = siso;
 			productName = siso;
-			productReference = 13B07F961A680F5B00A75B9A /* siso.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* Siso.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2D02E47A1E0B4A5D006451C7 /* siso-tvOS */ = {
@@ -643,7 +642,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = siso;
+				PRODUCT_NAME = Siso;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -665,7 +664,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = siso;
+				PRODUCT_NAME = Siso;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
