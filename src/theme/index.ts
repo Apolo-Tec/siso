@@ -3,7 +3,6 @@ import { DefaultTheme } from 'styled-components/native';
 
 import colors, { ColorsProps } from './colors';
 import units, { UnitsProps } from './units';
-import { color } from 'react-native-reanimated';
 
 declare module 'styled-components' {
   export interface DefaultTheme {
@@ -17,6 +16,7 @@ export const sisoTheme: DefaultTheme = {
     background: {
       primary: colors.dodgerBlue,
       tertiary: colors.aquaHaze,
+      white: colors.white,
     },
     button: {
       primary: {

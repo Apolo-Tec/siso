@@ -4,8 +4,8 @@ import { ButtonProps } from './interface';
 
 import { Container, ButtonText } from './styles';
 
-const Button = ({ title, variant }: ButtonProps) => (
-<Container variant={variant}>
+const Button = ({ title, variant, onPress, disabled }: ButtonProps) => (
+<Container variant={variant} onPress={onPress} disabled={disabled}>
   <ButtonText variant={variant}>
     {title}
   </ButtonText>

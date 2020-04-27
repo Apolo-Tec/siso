@@ -27,6 +27,7 @@ export interface ColorPropsBackground {
   corduroy: string;
   error: string;
   dotIndicator: string;
+  white: string;
 }
 
 export type ButtonColorScheme = {

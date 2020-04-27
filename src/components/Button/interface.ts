@@ -6,6 +6,7 @@ export interface ButtonProps {
   title: string;
   variant: Variant;
   disabled?: boolean;
+  onPress: () => void;
 };
 
 export interface StyledProps {
