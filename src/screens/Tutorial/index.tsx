@@ -9,7 +9,7 @@ import step3 from '../../assets/images/step3.png';
 
 import Swiper from 'react-native-swiper'
 
-export default function Tutorial() {
+export default function Tutorial({ navigation }: any) {
 
   const styles = {
     text: {
@@ -19,7 +19,7 @@ export default function Tutorial() {
     }};
   
   const handleButton = () => {
-    console.log('go to login');
+    navigation.navigate("Login");
   }
 
 
