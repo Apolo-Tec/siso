@@ -5,6 +5,10 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { createStackNavigator } from '@react-navigation/stack';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
+import { useSelector } from 'react-redux';
+
+//const isLogged  = useSelector((state) => state.user.data.Error);
+
 const Stack = createStackNavigator();
 
 const Drawer = createDrawerNavigator();
@@ -16,6 +20,12 @@ import Tutorial from '../screens/Tutorial';
 
 const isLogged = false;
 const isNewUser = true;
+
+const drawerStack = () => (
+  <Drawer.Navigator initialRouteName="Home">
+    <Drawer.Screen name="quotation" options={{ title: 'Cotação' }} component={quotationStack} />
+  </Drawer.Navigator>
+)
 
 const loginStack = () => (
   <Stack.Navigator>
@@ -29,12 +39,6 @@ const quotationStack = () => (
   <Stack.Navigator>
     <Stack.Screen name="Home" component={Home} />
   </Stack.Navigator>
-)
-
-const drawerStack = () => (
-  <Drawer.Navigator initialRouteName="Home">
-    <Drawer.Screen name="quotation" options={{ title: 'Cotação' }} component={quotationStack} />
-  </Drawer.Navigator>
 )
 
 export default function Routes() {

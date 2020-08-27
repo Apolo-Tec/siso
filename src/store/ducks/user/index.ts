@@ -18,8 +18,6 @@ const reducer: Reducer<UserState> = (state = INITAL_STATE, action) => {
         case UserTypes.LOAD_REQUEST:
             return { ...state, loading: true };
         case UserTypes.LOAD_SUCCESS:
-            console.log('state', state);
-            console.log('action.payload', action.payload);
             return { ...state, loading: false, error: false, data: action.payload.data };
         case UserTypes.LOAD_FAILURE:
             return { ...state, loading: false, error: true, data: {} };

@@ -3,10 +3,9 @@ import { siso, repositories } from '../../../services/api';
 
 import { loadSuccess, loadFailure } from './actions';
 
-export function* loadUser() {
+export function* loadUser({ payload }) {
     try {
-        console.log('loadUser');
-        const response = yield call(siso.get, "Usuario/Autenticar?user=rodolfo.chaves&psw=123"); 
+        const response = yield call(siso.get, `Usuario/Autenticar?user=${payload.user}&psw=${payload.psw}`); 
         console.log('response', response);  
         yield put(loadSuccess(response.data));
     } catch (err) {
